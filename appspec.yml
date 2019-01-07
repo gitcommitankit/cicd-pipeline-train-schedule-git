@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /application/
+hooks:
+  BeforeInstall:
+    - location: before_install.sh
+      runas: root
+  AfterInstall:
+    - location: after_install.sh
+      runas: root
