@@ -1,4 +1,5 @@
 #!/bin/bash
-cd /application/
+cd /application
 npm install
-nohup npm start &
+npm audit fix
+nohup npm start & 
